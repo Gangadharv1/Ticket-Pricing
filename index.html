@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Pricing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ticket Pricing</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ticket Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Zype Non-Member<br>
+                        <span class="description">Delegates will have access to Conference, Expo & Awards Evening.</span>
+                    </td>
+                    <td> ₹ 2999</td>
+                    <td>
+                        <select class="quantity" data-price="2999">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td class="total">0</td>
+                </tr>
+                <tr>
+                    <td>
+                        Faculty / Researcher<br>
+                        <span class="description">Ticket Description: Delegates will have access to Conference, Expo & Awards.</span>
+                    </td>
+                    <td>₹ 1999</td>
+                    <td>
+                        <select class="quantity" data-price="1999">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td class="total">0</td>
+                </tr>
+                <tr>
+                    <td>
+                        Students<br>
+                        <span class="description">Student delegates will have access to Conference, Expo and Evening Awards.</span>
+                    </td>
+                    <td>₹ 999</td>
+                    <td>
+                        <select class="quantity" data-price="999">
+                             <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td class="total">0</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="summary">
+            <h2>Total Due: <span id="total-due">0</span></h2>
+            <button id="buy-button">Buy</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
